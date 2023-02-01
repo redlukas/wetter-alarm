@@ -17,7 +17,7 @@
 **This component will set up the following platforms.**
 
 | Platform | Description                      |
-| -------- |----------------------------------|
+| -------- | -------------------------------- |
 | `sensor` | Show info from Wetter-Alarm API. |
 
 ## Overview
@@ -57,10 +57,7 @@ Go to the `Settings -> Devices & Services -> Integrations` tab of your Home Assi
 Click `ADD INTEGRATION` and search for "Wetter-Alarm".
 The Configuration flow will start when you click install.
 
-
 ## How to find the ID of your location
-
-
 
 ## Contributions are welcome!
 
@@ -69,7 +66,6 @@ If you want to contribute to this please read the [Contribution guidelines](CONT
 ## Credits
 
 Code template was mainly taken from [@Ludeeus](https://github.com/ludeeus)'s [integration_blueprint][integration_blueprint] template
-
 
 ---
 
