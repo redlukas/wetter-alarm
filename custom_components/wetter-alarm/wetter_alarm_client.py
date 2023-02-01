@@ -2,20 +2,37 @@ from __future__ import annotations
 
 import json
 import logging
+from datetime import datetime
 
 import requests
 from homeassistant.core import HomeAssistant
 from homeassistant.exceptions import HomeAssistantError
+
+from .const import ALARM_ID, VALID_FROM, VALID_TO, PRIORITY, REGION, TITLE, HINT, SIGNATURE
 
 _LOGGER = logging.getLogger(__name__)
 alert_url = "https://my.wetteralarm.ch/v7/alarms/meteo.json"
 
 
 class WetterAlarmApiClient:
-    def __init__(self, poi_id):
+    def __init__(self, poi_id: int):
         self.poi_id = poi_id
         self.poi_url = f"https://my.wetteralarm.ch/v7/pois/{poi_id}.json"
-        _LOGGER.error("API instance initialized for poi id", poi_id)
+
+    def validate_poi_id_sync(self) -> bool:
+        try:
+            res = requests.get(self.poi_url)
+            if res:
+                return True
+            else:
+                return False
+        except requests.exceptions as er:
+            _LOGGER.error("error validating the poi id", er)
+            return False
+
+    async def validate_poi_id_async(self, hass: HomeAssistant) -> bool:
+        result = await hass.async_add_executor_job(self.validate_poi_id_sync)
+        return result
 
     def get_poi_data_sync(self):
         try:
@@ -37,7 +54,33 @@ class WetterAlarmApiClient:
         try:
             res = requests.get(alert_url)
             parsed = json.loads(res.text)["meteo_alarms"]
-            _LOGGER.error("got alerts", parsed)
+            # _LOGGER.error(f"got alerts {parsed}")
+
+            found_alarm = False
+            for alarm in parsed:
+                if self.poi_id in alarm["poi_ids"]:
+                    return {
+                        ALARM_ID: alarm["id"],
+                        VALID_FROM: datetime.strptime(alarm["valid_from"], '%Y-%m-%dT%H:%M:%S.%fZ'),
+                        VALID_TO: datetime.strptime(alarm["valid_to"], '%Y-%m-%dT%H:%M:%S.%fZ'),
+                        PRIORITY: alarm["priority"],
+                        REGION: alarm["region"]["en"]["name"],
+                        TITLE: alarm["en"]["title"],
+                        HINT: alarm["en"]["hint"],
+                        SIGNATURE: alarm["en"]["signature"]
+
+                    }
+            if not found_alarm:
+                return {
+                    ALARM_ID: -1,
+                    VALID_FROM: None,
+                    VALID_TO: None,
+                    PRIORITY: None,
+                    REGION: None,
+                    TITLE: None,
+                    HINT: None,
+                    SIGNATURE: None
+                    }
 
         except requests.exceptions.ConnectionError as ce:
             _LOGGER.error("generic connection error", ce)
