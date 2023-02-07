@@ -87,7 +87,7 @@ Code template was mainly taken from [@Ludeeus](https://github.com/ludeeus)'s [in
 [releases-shield]: https://img.shields.io/github/release/redlukas/wetter-alarm.svg
 [releases]: https://github.com/redlukas/wetter-alarm/releases
 [user_profile]: https://github.com/redlukas
-[hassfest-badge]: https://github.com/redlukas/wetter-alarm/workflows/Validate%20with%20Hassfest/badge.svg
+[hassfest-badge]: https://github.com/redlukas/wetter-alarm/actions/workflows/hassfest.yml/badge.svg
 [hassfest]: https://developers.home-assistant.io/blog/2020/04/16/hassfest/
 [open-in-hacs]: https://my.home-assistant.io/redirect/hacs_repository/?owner=redlukas&repository=wetter-alarm&category=integration
 [my-hacs-badge]: https://my.home-assistant.io/badges/hacs_repository.svg
