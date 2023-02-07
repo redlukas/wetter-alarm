@@ -8,7 +8,14 @@ import requests
 from homeassistant.core import HomeAssistant
 from homeassistant.exceptions import HomeAssistantError
 
-from .const import ALARM_ID, VALID_FROM, VALID_TO, PRIORITY, REGION, TITLE, HINT, SIGNATURE
+from .const import ALARM_ID
+from .const import HINT
+from .const import PRIORITY
+from .const import REGION
+from .const import SIGNATURE
+from .const import TITLE
+from .const import VALID_FROM
+from .const import VALID_TO
 
 _LOGGER = logging.getLogger(__name__)
 alert_url = "https://my.wetteralarm.ch/v7/alarms/meteo.json"
@@ -61,14 +68,17 @@ class WetterAlarmApiClient:
                 if self.poi_id in alarm["poi_ids"]:
                     return {
                         ALARM_ID: alarm["id"],
-                        VALID_FROM: datetime.strptime(alarm["valid_from"], '%Y-%m-%dT%H:%M:%S.%fZ'),
-                        VALID_TO: datetime.strptime(alarm["valid_to"], '%Y-%m-%dT%H:%M:%S.%fZ'),
+                        VALID_FROM: datetime.strptime(
+                            alarm["valid_from"], "%Y-%m-%dT%H:%M:%S.%fZ"
+                        ),
+                        VALID_TO: datetime.strptime(
+                            alarm["valid_to"], "%Y-%m-%dT%H:%M:%S.%fZ"
+                        ),
                         PRIORITY: alarm["priority"],
                         REGION: alarm["region"]["en"]["name"],
                         TITLE: alarm["en"]["title"],
                         HINT: alarm["en"]["hint"],
-                        SIGNATURE: alarm["en"]["signature"]
-
+                        SIGNATURE: alarm["en"]["signature"],
                     }
             if not found_alarm:
                 return {
@@ -79,8 +89,8 @@ class WetterAlarmApiClient:
                     REGION: None,
                     TITLE: None,
                     HINT: None,
-                    SIGNATURE: None
-                    }
+                    SIGNATURE: None,
+                }
 
         except requests.exceptions.ConnectionError as ce:
             _LOGGER.error("generic connection error", ce)

@@ -14,26 +14,32 @@ from homeassistant.helpers.entity import DeviceInfo
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
 from homeassistant.helpers.update_coordinator import CoordinatorEntity
 from homeassistant.helpers.update_coordinator import DataUpdateCoordinator
+
+from .const import ALARM_ID
+from .const import DOMAIN
+from .const import HINT
+from .const import PRIORITY
+from .const import REGION
+from .const import SIGNATURE
+from .const import TITLE
+from .const import VALID_FROM
+from .const import VALID_TO
 from .wetter_alarm_client import WetterAlarmApiClient
-from .const import DOMAIN, ALARM_ID, VALID_FROM, VALID_TO, PRIORITY, REGION, TITLE, HINT, SIGNATURE
 
 _LOGGER = logging.getLogger(__name__)
 SCAN_INTERVAL = timedelta(seconds=60)
 
 
 async def async_setup_entry(
-        hass: HomeAssistant,
-        config_entry: ConfigEntry,
-        async_add_entities: AddEntitiesCallback,
+    hass: HomeAssistant,
+    config_entry: ConfigEntry,
+    async_add_entities: AddEntitiesCallback,
 ):
     pois_from_config = config_entry.data["pois"]
     all_sensors = []
     for poi_name, poi_id in pois_from_config:
         coordinator = WetterAlarmCoordinator(
-            hass=hass,
-            logger=_LOGGER,
-            poi_name=poi_name,
-            poi_id=poi_id
+            hass=hass, logger=_LOGGER, poi_name=poi_name, poi_id=poi_id
         )
         sensors = [
             WetterAlarmIdSensor(coordinator, ALARM_ID),
@@ -43,7 +49,7 @@ async def async_setup_entry(
             WetterAlarmRegionSensor(coordinator, REGION),
             WetterAlarmTitleSensor(coordinator, TITLE),
             WetterAlarmHintSensor(coordinator, HINT),
-            WetterAlarmSignatureSensor(coordinator, SIGNATURE)
+            WetterAlarmSignatureSensor(coordinator, SIGNATURE),
         ]
         all_sensors.extend(sensors)
         await coordinator.async_config_entry_first_refresh()
@@ -149,11 +155,7 @@ class WetterAlarmCoordinator(DataUpdateCoordinator):
     """Custom Wetter-Alarm Coordinator"""
 
     def __init__(
-            self,
-            hass: HomeAssistant,
-            logger: logging.Logger,
-            poi_id: int,
-            poi_name: str
+        self, hass: HomeAssistant, logger: logging.Logger, poi_id: int, poi_name: str
     ) -> None:
         self._hass = hass
         self._poi_id = poi_id
@@ -185,9 +187,7 @@ class WetterAlarmCoordinator(DataUpdateCoordinator):
 
         async def fetch_all_values() -> dict[str, float]:
             client = WetterAlarmApiClient(self._poi_id)
-            data = await client.search_for_alerts_async(
-                hass=self._hass
-            )
+            data = await client.search_for_alerts_async(hass=self._hass)
             return data
 
         return await fetch_all_values()

@@ -4,11 +4,6 @@ import logging
 
 import voluptuous as vol
 from homeassistant import config_entries
-from homeassistant.helpers.selector import TextSelector
-from homeassistant.helpers.selector import TextSelectorConfig
-from homeassistant.helpers.selector import TextSelectorType
-from homeassistant.util.network import is_ipv4_address
-from homeassistant.util.network import is_ipv6_address
 
 from . import WetterAlarmApiClient
 from .const import DOMAIN
@@ -26,16 +21,12 @@ class WetterAlarmConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
         if user_input is not None:
             poi_id = user_input.get("poi_id", "")
             client = WetterAlarmApiClient(poi_id)
-            valid_poi = await client.validate_poi_id_async(
-                hass=self.hass
-            )
+            valid_poi = await client.validate_poi_id_async(hass=self.hass)
             if valid_poi:
                 poi_name = user_input.get("poi_name", "")
                 return self.async_create_entry(
                     title="Wetter-Alarm",
-                    data={
-                        "pois": {(poi_name, poi_id)}
-                    },
+                    data={"pois": {(poi_name, poi_id)}},
                 )
             else:
                 _LOGGER.error("async step_user determined invalid POI")

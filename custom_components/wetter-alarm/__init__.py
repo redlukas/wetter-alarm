@@ -20,7 +20,6 @@ async def async_setup_entry(hass: HomeAssistant, config_entry: ConfigEntry) -> b
 
     hass.data.setdefault(DOMAIN, {})
 
-
     client = WetterAlarmApiClient(136788)
 
     valid_connection = await client.validate_poi_id_async(hass=hass)
