@@ -43,10 +43,12 @@ Just click here: [![Open in HACS.][my-hacs-badge]][open-in-hacs]
 Using your HA configuration directory (folder) as a starting point you should now also have this:
 
 ```text
-custom_components/emu_m_bus_center/__init__.py
-custom_components/emu_m_bus_center/config_flow.py
-custom_components/emu_m_bus_center/manifest.json
-custom_components/emu_m_bus_center/sensor.py
+custom_components/wetter-alarm/__init__.py
+custom_components/wetter-alarm/config_flow.py
+custom_components/wetter-alarm/manifest.json
+custom_components/wetter-alarm/sensor.py
+custom_components/wetter-alarm/wetter_alarm_client.py
+custom_components/wetter-alarm/translations/en.json
 ```
 
 ## Configuration
