@@ -1,13 +1,13 @@
 {
   "domain": "wetter-alarm",
   "name": "Wetter-Alarm",
-  "documentation": "https://github.com/redlukas/wetter-alarm",
-  "issue_tracker": "https://github.com/redlukas/wetter-alarm/issues",
-  "dependencies": [],
-  "config_flow": true,
   "codeowners": ["@redlukas"],
-  "requirements": [],
-  "version": "0.1.0",
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/redlukas/wetter-alarm",
   "integration_type": "hub",
-  "iot_class": "cloud_polling"
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/redlukas/wetter-alarm/issues",
+  "requirements": [],
+  "version": "0.1.0"
 }
