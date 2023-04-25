@@ -1138,6 +1138,8 @@
 | Hannig                    | 149447 | [OSM](https://www.openstreetmap.org/?mlat=46.114961&mlon=7.91645&zoom=13)               |
 | Heidbodme                 | 149452 | [OSM](https://www.openstreetmap.org/?mlat=46.082125&mlon=7.975294&zoom=13)              |
 | La Meina                  | 149633 | [OSM](https://www.openstreetmap.org/?mlat=46.121187&mlon=7.455872&zoom=13)              |
+| La Pasay                  | 149703 | [OSM](https://www.openstreetmap.org/?mlat=46.050322&mlon=7.183541&zoom=13)              |
+| Les Attelas               | 149702 | [OSM](https://www.openstreetmap.org/?mlat=46.099252&mlon=7.26978&zoom=13)               |
 | Morgins Sommet Fouilleuse | 149438 | [OSM](https://www.openstreetmap.org/?mlat=46.224678&mlon=6.862299&zoom=13)              |
 | Plan du Fou               | 149462 | [OSM](https://www.openstreetmap.org/?mlat=46.139873&mlon=7.293428&zoom=13)              |
 | Siviez (Nendaz)           | 47477  | [OSM](https://www.openstreetmap.org/?mlat=46.1353&mlon=7.3166&zoom=13)                  |

@@ -22,7 +22,6 @@
 
 | Name                             | POI ID | Link                                                                         |
 | -------------------------------- | ------ | ---------------------------------------------------------------------------- |
-|                                  | 48022  | [OSM](https://www.openstreetmap.org/?mlat=45.924083&mlon=8.978546&zoom=13)   |
 | Camping Al Censo                 | 48078  | [OSM](https://www.openstreetmap.org/?mlat=46.265229&mlon=9.01862&zoom=13)    |
 | Camping Aquarossa                | 48085  | [OSM](https://www.openstreetmap.org/?mlat=46.460521&mlon=8.941363&zoom=13)   |
 | Camping Bellavista Gambarogno    | 47989  | [OSM](https://www.openstreetmap.org/?mlat=46.142946&mlon=8.838784&zoom=13)   |
@@ -38,6 +37,7 @@
 | Camping Melezza                  | 47947  | [OSM](https://www.openstreetmap.org/?mlat=46.17715&mlon=8.729871&zoom=13)    |
 | Camping Monte Generoso           | 47954  | [OSM](https://www.openstreetmap.org/?mlat=45.92779&mlon=8.976513&zoom=13)    |
 | Camping Moretto Cureglia         | 48040  | [OSM](https://www.openstreetmap.org/?mlat=46.032412&mlon=8.940671&zoom=13)   |
+| Camping Paradiso Lago            | 48022  | [OSM](https://www.openstreetmap.org/?mlat=45.924083&mlon=8.978546&zoom=13)   |
 | Camping Piccolo Paradiso         | 47946  | [OSM](https://www.openstreetmap.org/?mlat=46.200788&mlon=8.742705&zoom=13)   |
 | Camping Riarena                  | 47930  | [OSM](https://www.openstreetmap.org/?mlat=46.168&mlon=8.914&zoom=13)         |
 | Camping Rivabella Tenero         | 48041  | [OSM](https://www.openstreetmap.org/?mlat=46.171853&mlon=8.846936&zoom=13)   |

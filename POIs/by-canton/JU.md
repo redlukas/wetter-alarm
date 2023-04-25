@@ -154,6 +154,7 @@
 | Rossemaison           | 141660 | [OSM](https://www.openstreetmap.org/?mlat=47.346259853129055&mlon=7.344809442592672&zoom=13)  |
 | Réclère               | 141471 | [OSM](https://www.openstreetmap.org/?mlat=47.37571570003849&mlon=6.923269958101282&zoom=13)   |
 | Saignelégier          | 141610 | [OSM](https://www.openstreetmap.org/?mlat=47.25616590537676&mlon=6.997239849739614&zoom=13)   |
+| Saint-Ursanne         | 143844 | [OSM](https://www.openstreetmap.org/?mlat=47.36406305872529&mlon=7.156489749558609&zoom=13)   |
 | Saulcy                | 141628 | [OSM](https://www.openstreetmap.org/?mlat=47.302247875381525&mlon=7.1553144076551565&zoom=13) |
 | Sceut-Dessus          | 141104 | [OSM](https://www.openstreetmap.org/?mlat=47.31772963115089&mlon=7.1515261347937855&zoom=13)  |
 | Seleute               | 47490  | [OSM](https://www.openstreetmap.org/?mlat=47.366&mlon=7.112&zoom=13)                          |
@@ -161,7 +162,6 @@
 | Soulce                | 141627 | [OSM](https://www.openstreetmap.org/?mlat=47.303931355665995&mlon=7.270116344349726&zoom=13)  |
 | Soyhières             | 141502 | [OSM](https://www.openstreetmap.org/?mlat=47.39096188962432&mlon=7.371045469871762&zoom=13)   |
 | St-Brais              | 141625 | [OSM](https://www.openstreetmap.org/?mlat=47.304757303021866&mlon=7.113141603787081&zoom=13)  |
-| St-Ursanne            | 143844 | [OSM](https://www.openstreetmap.org/?mlat=47.36406305872529&mlon=7.156489749558609&zoom=13)   |
 | Séprais               | 141489 | [OSM](https://www.openstreetmap.org/?mlat=47.36625278439435&mlon=7.22756901381988&zoom=13)    |
 | Undervelier           | 141626 | [OSM](https://www.openstreetmap.org/?mlat=47.30244558318611&mlon=7.224545612425069&zoom=13)   |
 | Vellerat              | 141665 | [OSM](https://www.openstreetmap.org/?mlat=47.31927542025326&mlon=7.371105652458125&zoom=13)   |

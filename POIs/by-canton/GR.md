@@ -665,7 +665,7 @@
 | Piz Cartas                     | 136597 | [OSM](https://www.openstreetmap.org/?mlat=46.569145116477216&mlon=9.514261657682775&zoom=13)  |
 | Piz Casaccia                   | 136794 | [OSM](https://www.openstreetmap.org/?mlat=46.35248931665225&mlon=9.68892874895111&zoom=13)    |
 | Piz Caschleglia                | 136616 | [OSM](https://www.openstreetmap.org/?mlat=46.651527371365354&mlon=8.904485549812096&zoom=13)  |
-| Piz Casnil                     | 136850 | [OSM](https://www.openstreetmap.org/?mlat=46.3361013255&mlon=9.68395126933&zoom=13)           |
+| Piz Casnil                     | 136850 | [OSM](https://www.openstreetmap.org/?mlat=46.3361013255283&mlon=9.68395126933949&zoom=13)     |
 | Piz Cavardiras                 | 137922 | [OSM](https://www.openstreetmap.org/?mlat=46.73666972470991&mlon=8.814595765237954&zoom=13)   |
 | Piz Cavel                      | 136468 | [OSM](https://www.openstreetmap.org/?mlat=46.655955249829006&mlon=9.019887403988218&zoom=13)  |
 | Piz Cavradi                    | 136453 | [OSM](https://www.openstreetmap.org/?mlat=46.632270730027784&mlon=8.695718009898844&zoom=13)  |
