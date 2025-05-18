@@ -35,20 +35,24 @@ Just click here: [![Open in HACS.][my-hacs-badge]][open-in-hacs]
 
 1. Using the tool of choice open the directory (folder) for your HA configuration (where you find `configuration.yaml`).
 2. If you do not have a `custom_components` directory (folder) there, you need to create it.
-3. In the `custom_components` directory (folder) create a new folder called `wetter-alarm`.
-4. Download _all_ the files from the `custom_components/wetter-alarm/` directory (folder) in this repository.
+3. In the `custom_components` directory (folder) create a new folder called `wetter_alarm`.
+4. Download _all_ the files from the `custom_components/wetter_alarm/` directory (folder) in this repository.
 5. Place the files you downloaded in the new directory (folder) you created.
 6. Restart Home Assistant
 
 Using your HA configuration directory (folder) as a starting point you should now also have this:
 
 ```text
-custom_components/wetter-alarm/__init__.py
-custom_components/wetter-alarm/config_flow.py
-custom_components/wetter-alarm/manifest.json
-custom_components/wetter-alarm/sensor.py
-custom_components/wetter-alarm/wetter_alarm_client.py
-custom_components/wetter-alarm/translations/en.json
+custom_components/wetter_alarm/__init__.py
+custom_components/wetter_alarm/api.py
+custom_components/wetter_alarm/config_flow.py
+custom_components/wetter_alarm/const.py
+custom_components/wetter_alarm/coordinator.py
+custom_components/wetter_alarm/data.py
+custom_components/wetter_alarm/entity.py
+custom_components/wetter_alarm/manifest.json
+custom_components/wetter_alarm/sensor.py
+custom_components/wetter_alarm/translations/en.json
 ```
 
 ## Configuration
