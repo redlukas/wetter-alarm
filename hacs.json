@@ -1,6 +1,6 @@
 {
   "name": "Wetter-Alarm",
-  "hacs": "1.6.0",
-  "homeassistant": "0.7.4",
+  "homeassistant": "2025.2.4",
+  "hacs": "2.0.1",
   "render_readme": true
 }
