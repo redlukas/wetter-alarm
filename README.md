@@ -61,6 +61,17 @@ The Configuration flow will start when you click install.
 
 ## How to find the ID of your location
 
+### Method 1
+
+Go to  [https://redlukas.github.io/poi-presenter/],
+select the desired canton and find the location on the map.
+
+### Method 2
+
+Look at [the POIs folder]( POIs) in this repo.
+In there you'll find a JSON with all the POIs
+as well as a site for each Canton where the POIs are listed by kind.
+
 ## Contributions are welcome!
 
 If you want to contribute to this please read the [Contribution guidelines](CONTRIBUTING.md)
