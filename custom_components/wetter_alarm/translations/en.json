@@ -1,0 +1,24 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "description": "Please enter the Name and ID of the place you want to add and the language you want to use for the messages.",
+                "data": {
+                    "poi_name": "POI Name",
+                    "poi_id": "POI ID",
+                    "language": "Language"
+                }
+            }
+        }
+    },
+    "selector": {
+      "language": {
+        "options": {
+          "de": "German",
+          "fr": "French",
+          "it": "Italian",
+          "en": "English"
+        }
+      }
+    }
+}

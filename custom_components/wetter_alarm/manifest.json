@@ -1,5 +1,5 @@
 {
-  "domain": "wetter-alarm",
+  "domain": "wetter_alarm",
   "name": "Wetter-Alarm",
   "codeowners": ["@redlukas"],
   "config_flow": true,
