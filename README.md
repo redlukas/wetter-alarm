@@ -5,7 +5,7 @@
 [![License][license-shield]](LICENSE)
 
 [![pre-commit][pre-commit-shield]][pre-commit]
-[![Black][black-shield]][black]
+[![Ruff][ruff-shield]][ruff]
 [![Validate with Hassfest][hassfest-badge]][hassfest]
 
 [![hacs][hacsbadge]][hacs]
@@ -87,12 +87,12 @@ Code template was mainly taken from [@Ludeeus](https://github.com/ludeeus)'s [in
 ---
 
 [integration_blueprint]: https://github.com/custom-components/integration_blueprint
-[black]: https://github.com/psf/black
-[black-shield]: https://img.shields.io/badge/code%20style-black-000000.svg
+[ruff]: https://docs.astral.sh/ruff/
+[ruff-shield]: https://img.shields.io/badge/code_style-ruff-purple?style=flat&logo=ruff
 [commits-shield]: https://img.shields.io/github/commit-activity/y/redlukas/wetter-alarm.svg
 [commits]: https://github.com/redlukas/wetter-alarm/commits/main
 [hacs]: https://hacs.xyz
-[hacsbadge]: https://img.shields.io/badge/HACS-Default-green.svg
+[hacsbadge]: https://img.shields.io/badge/HACS-Custom-green.svg
 [discord]: https://discord.gg/Qa5fW2R
 [discord-shield]: https://img.shields.io/discord/330944238910963714.svg?style=flat&logo=discord
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
