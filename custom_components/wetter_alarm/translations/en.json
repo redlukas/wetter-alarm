@@ -20,5 +20,54 @@
           "en": "English"
         }
       }
+    },
+  "entity": {
+    "sensor": {
+      "poi_name": {
+        "name": "POI Name"
+      },
+      "insolation": {
+        "name": "Insolation"
+      },
+      "wind_speed_max": {
+        "name": "Maximum wind speed"
+      },
+      "temperature_max": {
+        "name": "Maximum temperature"
+      },
+      "temperature_min": {
+        "name": "Minimum temperature"
+      },
+      "precipitation_amount": {
+        "name": "Precipitation amount"
+      },
+      "precipitation_probability": {
+        "name": "Precipitation probability"
+      },
+      "lunar_phase": {
+        "name": "Lunar phase"
+      },
+      "mood": {
+        "name": "Mood"
+      },
+      "sunrise": {
+        "name": "Sunrise"
+      },
+      "sunset": {
+        "name": "Sunset"
+      },
+      "insolation_max": {
+        "name": "Maximum insolation"
+      },
+      "lunar_phase_percentage": {
+        "name": "Lunar phase percentage"
+      },
+      "wind_direction": {
+        "name": "Wind direction"
+      },
+      "date": {
+        "name": "Date"
+      }
     }
+  }
 }

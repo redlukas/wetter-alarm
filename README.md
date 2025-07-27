@@ -67,7 +67,7 @@ The Configuration flow will start when you click install.
 
 ### Method 1
 
-Go to  [https://redlukas.github.io/poi-presenter/],
+Go to  [this page](https://redlukas.github.io/poi-presenter/),
 select the desired canton and find the location on the map.
 
 ### Method 2
