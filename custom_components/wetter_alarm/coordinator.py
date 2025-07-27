@@ -70,6 +70,11 @@ class WetterAlarmCoordinator(DataUpdateCoordinator):
         """Return the POI (Point of Interest) ID."""
         return self._poi_id
 
+    @property
+    def data_language(self) -> str:
+        """Return the data language."""
+        return self._data_language
+
     async def _async_update_data(self) -> Any:
         """
         Fetch data from API endpoint.
@@ -81,7 +86,7 @@ class WetterAlarmCoordinator(DataUpdateCoordinator):
 
         async def fetch_all_values() -> dict[str, Any] | None:
             client = WetterAlarmApiClient(self._poi_id, self._data_language)
-            return await client.async_search_for_alerts()
+            return await client.refresh_poi()
 
         try:
             return await fetch_all_values()

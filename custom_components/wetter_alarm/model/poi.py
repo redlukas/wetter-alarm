@@ -14,14 +14,12 @@ from pydantic import (
     field_validator,
 )
 
-CANTON_ABBR_LEN = 2
-
-
-def get_canton_abbr(long_form: str) -> str:
-    """Get the canton abbreviation from the long form string."""
-    match long_form.lower():
-        case "thurgau":
-            return "TG"
+from custom_components.wetter_alarm.model.alert import Alert
+from custom_components.wetter_alarm.model.canton import (
+    CANTON_ABBR_LEN,
+    Canton,
+    get_canton_abbr,
+)
 
 
 class Kind(str, Enum):
@@ -42,39 +40,6 @@ class Kind(str, Enum):
     valley = "valley"
     viewpoint = "viewpoint"
     zoo = "zoo"
-
-
-class Canton(str, Enum):
-    """Hold the values a canton can have."""
-
-    AG = "AG"
-    AI = "AI"
-    AR = "AR"
-    BE = "BE"
-    BL = "BL"
-    BS = "BS"
-    FL = "FL"
-    FR = "FR"
-    GE = "GE"
-    GL = "GL"
-    GR = "GR"
-    INTERNATIONAL = "I"
-    JU = "JU"
-    LU = "LU"
-    NE = "NE"
-    NW = "NW"
-    OW = "OW"
-    SG = "SG"
-    SH = "SH"
-    SO = "SO"
-    SZ = "SZ"
-    TG = "TG"
-    TI = "TI"
-    UR = "UR"
-    VD = "VD"
-    VS = "VS"
-    ZG = "ZG"
-    ZH = "ZH"
 
 
 class PoiDescription(BaseModel):
@@ -356,6 +321,16 @@ class POI(BaseModel):
     day_forecasts: list[DayForecast]
     hour_forecasts: list[HourForecast]
     livecams: list[Livecam] | None
+    alerts: list[Alert] = []
+
+    def __repr__(self) -> str:
+        """Create a string representation."""
+        return (
+            f"POI(id={self.poi_id},"
+            f"kind={self.kind},"
+            f"{len(self.alerts)}"
+            f"alerts: {self.alerts})"
+        )
 
     @field_validator("time_zone", mode="before")
     def parse_timezone(cls, v: str | ZoneInfo) -> ZoneInfo:  # noqa: N805

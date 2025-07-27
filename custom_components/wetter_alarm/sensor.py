@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import logging
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, Any
 
 from homeassistant.components.sensor import (
     SensorDeviceClass,
@@ -36,6 +36,7 @@ if TYPE_CHECKING:
     from homeassistant.helpers.entity_platform import AddEntitiesCallback
 
     from .data import WetterAlarmConfigEntry
+    from .model.poi import POI
 
 ENTITY_DESCRIPTIONS = (
     SensorEntityDescription(
@@ -93,9 +94,9 @@ async def async_setup_entry(
 
         all_sensors.extend(sensors)
 
-        await coordinator.async_config_entry_first_refresh()
-
     async_add_entities(all_sensors)
+    for sensor in all_sensors:
+        await sensor.coordinator.async_config_entry_first_refresh()
 
 
 class WetterAlarmBaseSensor(WetterAlarmEntity, SensorEntity):
@@ -146,9 +147,23 @@ class WetterAlarmBaseSensor(WetterAlarmEntity, SensorEntity):
     @property
     def native_value(self) -> object:
         """Return the native value of the sensor."""
-        if self.coordinator.data is None:
+        data = self.coordinator.data
+        if data is None:
             return None
-        return self.coordinator.data.get(self.entity_description.key)
+        return self.extract_values_from_object(data).get(self.entity_description.key)
+
+    def extract_values_from_object(self, poi: POI) -> dict[str, Any]:
+        """Extract values from object."""
+        return {
+            ALARM_ID: poi.alerts[0].alert_id,
+            VALID_FROM: poi.alerts[0].valid_from,
+            VALID_TO: poi.alerts[0].valid_to,
+            PRIORITY: poi.alerts[0].priority,
+            REGION: getattr(poi.alerts[0].region, self.coordinator.data_language).name,
+            TITLE: getattr(poi.alerts[0], self.coordinator.data_language).title,
+            HINT: getattr(poi.alerts[0], self.coordinator.data_language).hint,
+            SIGNATURE: getattr(poi.alerts[0], self.coordinator.data_language).signature,
+        }
 
 
 class WetterAlarmIdSensor(WetterAlarmBaseSensor):

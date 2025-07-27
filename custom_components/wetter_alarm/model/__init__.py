@@ -1,1 +1,1 @@
-"""Create an explicit package."""
+"""Models."""
