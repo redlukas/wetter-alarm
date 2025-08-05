@@ -210,6 +210,7 @@ class LunarPhase(str, Enum):
 
     full_moon = "full_moon"
     waxing = "waxing"
+    waning = "waning"
 
 
 class Mood(str, Enum):
@@ -274,7 +275,7 @@ class DayForecast(BaseModel):
     symbol: int
     lunar_phase: LunarPhase
     mood: Mood
-    lunar_phase_time: NonNegativeInt | None
+    lunar_phase_time: datetime | None
     sunrise: datetime
     sunset: datetime
     symbol_v2: int
