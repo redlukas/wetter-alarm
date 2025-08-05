@@ -69,10 +69,12 @@ class WetterAlarmApiClient:
                 msg = "Livecam only POIs are unsupported"
                 raise WetterAlarmApiError(msg)
             except ValidationError as e:
+                _LOGGER.debug(e)
                 msg = f"POI {self.poi_id} did not return a valid response"
                 _LOGGER.exception("[%s] ❌ Validation error", self.poi_id)
                 raise WetterAlarmApiError(poi_id=str(self.poi_id), msg=msg) from e
-        except CannotConnectError:
+        except CannotConnectError as e:
+            _LOGGER.debug(e)
             msg = f"POI {self.poi_id} did not return a valid response"
             _LOGGER.exception("Error validating the POI %s", self.poi_id)
             raise WetterAlarmApiError(poi_id=str(self.poi_id), msg=msg) from None
@@ -154,10 +156,12 @@ class WetterAlarmApiClient:
             try:
                 return POI.model_validate(res)
             except ValidationError as e:
+                _LOGGER.debug(e)
                 msg = f"POI {self.poi_id} did not return a valid response"
                 _LOGGER.exception("[%s] ❌ Validation error", self.poi_id)
                 raise WetterAlarmApiError(poi_id=str(self.poi_id), msg=msg) from e
-        except CannotConnectError:
+        except CannotConnectError as e:
+            _LOGGER.debug(e)
             msg = f"POI {self.poi_id} did not return a valid response"
             _LOGGER.exception("Error validating the POI %s", self.poi_id)
             raise WetterAlarmApiError(poi_id=str(self.poi_id), msg=msg) from None
