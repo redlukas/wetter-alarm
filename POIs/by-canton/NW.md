@@ -131,4 +131,3 @@
 | Name | Parent name | POI ID | Link |
 | ----- | ----- | ---- |
 | Voliere Stansstad |  | 148750 | [OSM](https://www.openstreetmap.org/?mlat=46.97854682157386&mlon=8.333832509571147&zoom=13) |
-

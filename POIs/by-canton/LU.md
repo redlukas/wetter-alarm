@@ -401,4 +401,3 @@
 | Hirschpark Willisau |  | 148729 | [OSM](https://www.openstreetmap.org/?mlat=47.1229232622259&mlon=7.989625789245342&zoom=13) |
 | Schweizerische Vogelwarte Sempach |  | 148743 | [OSM](https://www.openstreetmap.org/?mlat=47.127793240476024&mlon=8.192115753615154&zoom=13) |
 | Toni's Zoo |  | 148748 | [OSM](https://www.openstreetmap.org/?mlat=47.107507534908954&mlon=8.26228729779108&zoom=13) |
-

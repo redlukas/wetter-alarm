@@ -555,4 +555,3 @@
 | Name | Parent name | POI ID | Link |
 | ----- | ----- | ---- |
 | Blumen und Vogelpark Moosbad |  | 148751 | [OSM](https://www.openstreetmap.org/?mlat=46.89149423316971&mlon=8.630537330375933&zoom=13) |
-

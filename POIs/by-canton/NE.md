@@ -263,4 +263,3 @@
 | Name | Parent name | POI ID | Link |
 | ----- | ----- | ---- |
 | Parc Zoologique du Bois du Petit Chateau |  | 148717 | [OSM](https://www.openstreetmap.org/?mlat=47.105726814265296&mlon=6.821933556112855&zoom=13) |
-

@@ -674,4 +674,3 @@
 | Greifvogelpark Buchs |  | 148693 | [OSM](https://www.openstreetmap.org/?mlat=47.15409302383729&mlon=9.474514919505658&zoom=13) |
 | Voliere St. Gallen |  | 148755 | [OSM](https://www.openstreetmap.org/?mlat=47.428281486138616&mlon=9.383544327227078&zoom=13) |
 | Wildpark Peter und Paul |  | 148691 | [OSM](https://www.openstreetmap.org/?mlat=47.448562407424475&mlon=9.389095278800065&zoom=13) |
-

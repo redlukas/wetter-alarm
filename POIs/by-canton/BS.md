@@ -66,4 +66,3 @@
 | ----- | ----- | ---- |
 | Tierpark Lange Erlen |  | 148703 | [OSM](https://www.openstreetmap.org/?mlat=47.57394661676514&mlon=7.608185640026158&zoom=13) |
 | Zoo Basel |  | 148704 | [OSM](https://www.openstreetmap.org/?mlat=47.54743111138023&mlon=7.578937465588218&zoom=13) |
-

@@ -1427,4 +1427,3 @@
 | ----- | ----- | ---- |
 | Falconeria Locarno |  | 148731 | [OSM](https://www.openstreetmap.org/?mlat=46.161906772426306&mlon=8.792243564989434&zoom=13) |
 | Zoo Al Maglio |  | 148694 | [OSM](https://www.openstreetmap.org/?mlat=45.98501057450381&mlon=8.87679358966998&zoom=13) |
-

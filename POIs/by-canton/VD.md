@@ -895,4 +895,3 @@
 | Volière du parc de Mon Repos |  | 149353 | [OSM](https://www.openstreetmap.org/?mlat=46.51885705716522&mlon=6.64351046823555&zoom=13) |
 | Zoo de Servion |  | 148696 | [OSM](https://www.openstreetmap.org/?mlat=46.565032141019145&mlon=6.773155934854774&zoom=13) |
 | Zoo la Garenne |  | 149354 | [OSM](https://www.openstreetmap.org/?mlat=46.47966972415205&mlon=6.244676270800189&zoom=13) |
-

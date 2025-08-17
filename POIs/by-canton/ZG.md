@@ -140,4 +140,3 @@
 | Fasanerie Zug |  | 149352 | [OSM](https://www.openstreetmap.org/?mlat=47.166940538786925&mlon=8.514224180438083&zoom=13) |
 | Hirschgarten Zug |  | 148746 | [OSM](https://www.openstreetmap.org/?mlat=47.171280025811136&mlon=8.511844593405955&zoom=13) |
 | Voliere Zug |  | 148745 | [OSM](https://www.openstreetmap.org/?mlat=47.1674961364781&mlon=8.514744556115456&zoom=13) |
-

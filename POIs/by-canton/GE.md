@@ -239,4 +239,3 @@
 | Parc aux animaux du Bois de la Bâtie |  | 148758 | [OSM](https://www.openstreetmap.org/?mlat=46.198571978861565&mlon=6.122578901462674&zoom=13) |
 | Parc d'accueil Pierre Challandes |  | 148763 | [OSM](https://www.openstreetmap.org/?mlat=46.2577896540896&mlon=6.139514160063446&zoom=13) |
 | Vivarium de Meyrin |  | 148757 | [OSM](https://www.openstreetmap.org/?mlat=46.2255257024621&mlon=6.083047749694963&zoom=13) |
-

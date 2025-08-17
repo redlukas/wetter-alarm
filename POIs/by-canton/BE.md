@@ -1929,4 +1929,3 @@
 | Voliere Schwäbis |  | 148765 | [OSM](https://www.openstreetmap.org/?mlat=46.762381023325624&mlon=7.623202600345516&zoom=13) |
 | Wildpark Brienz |  | 148732 | [OSM](https://www.openstreetmap.org/?mlat=46.7562990669476&mlon=8.044374935513353&zoom=13) |
 | Zoo Rothaus |  | 148716 | [OSM](https://www.openstreetmap.org/?mlat=47.00975463096041&mlon=7.031688510471502&zoom=13) |
-

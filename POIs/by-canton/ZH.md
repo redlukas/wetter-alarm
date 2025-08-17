@@ -766,4 +766,3 @@
 | Wildnispark Zürich Langenberg |  | 149355 | [OSM](https://www.openstreetmap.org/?mlat=47.294399798205234&mlon=8.529971793858744&zoom=13) |
 | Wildpark Bruderhaus |  | 148689 | [OSM](https://www.openstreetmap.org/?mlat=47.477222261772425&mlon=8.725835591406602&zoom=13) |
 | Zoo Zürich |  | 148739 | [OSM](https://www.openstreetmap.org/?mlat=47.38642773859485&mlon=8.575444560142284&zoom=13) |
-

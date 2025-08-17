@@ -387,4 +387,3 @@
 | Schlangen Zoo Eschlikon |  | 148753 | [OSM](https://www.openstreetmap.org/?mlat=47.460905001049774&mlon=8.953444289641558&zoom=13) |
 | Tierpark Kreuzlingen |  | 148752 | [OSM](https://www.openstreetmap.org/?mlat=47.6505335332962&mlon=9.18521127359408&zoom=13) |
 | Voliere Arbon |  | 148754 | [OSM](https://www.openstreetmap.org/?mlat=47.51388382554258&mlon=9.434241789405103&zoom=13) |
-

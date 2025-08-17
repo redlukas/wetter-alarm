@@ -184,4 +184,3 @@
 | ----- | ----- | ---- |
 | Biaufond |  | 149466 | [OSM](https://www.openstreetmap.org/?mlat=47.167531&mlon=6.855075&zoom=13) |
 | Doubs Nature Park |  | 31637 | [OSM](https://www.openstreetmap.org/?mlat=47.248967&mlon=6.967528&zoom=13) |
-

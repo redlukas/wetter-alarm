@@ -148,4 +148,3 @@
 | Name | Parent name | POI ID | Link |
 | ----- | ----- | ---- |
 | Hagenturm |  | 149228 | [OSM](https://www.openstreetmap.org/?mlat=47.774007&mlon=8.567694&zoom=13) |
-

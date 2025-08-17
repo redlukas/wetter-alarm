@@ -260,4 +260,3 @@
 | Känzeli |  | 139667 | [OSM](https://www.openstreetmap.org/?mlat=46.87325292265972&mlon=8.982303778867731&zoom=13) |
 | Nussbüel |  | 149213 | [OSM](https://www.openstreetmap.org/?mlat=46.924322&mlon=8.984487&zoom=13) |
 | Oberblegisee |  | 149424 | [OSM](https://www.openstreetmap.org/?mlat=46.9793&mlon=9.0145&zoom=13) |
-

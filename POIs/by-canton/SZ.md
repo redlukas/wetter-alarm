@@ -329,4 +329,3 @@
 | ----- | ----- | ---- |
 | Knies Kinderzoo |  | 148719 | [OSM](https://www.openstreetmap.org/?mlat=47.22334684625977&mlon=8.82213238589582&zoom=13) |
 | Natur- und Tierpark Goldau |  | 148749 | [OSM](https://www.openstreetmap.org/?mlat=47.05306718001778&mlon=8.55651572968059&zoom=13) |
-

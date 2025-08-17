@@ -494,4 +494,3 @@
 | Wildpark Heitern |  | 148722 | [OSM](https://www.openstreetmap.org/?mlat=47.2818056388555&mlon=7.95636701847197&zoom=13) |
 | Wildpark Roggenhausen |  | 148720 | [OSM](https://www.openstreetmap.org/?mlat=47.379632402084276&mlon=8.030066597561497&zoom=13) |
 | Zoo Hasel |  | 148736 | [OSM](https://www.openstreetmap.org/?mlat=47.514198695418095&mlon=8.208061176934992&zoom=13) |
-

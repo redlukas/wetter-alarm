@@ -124,4 +124,3 @@
 | Name | Parent name | POI ID | Link |
 | ----- | ----- | ---- |
 | Ramstel |  | 147939 | [OSM](https://www.openstreetmap.org/?mlat=47.40828326096739&mlon=9.562841732935386&zoom=13) |
-
