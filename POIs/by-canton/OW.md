@@ -178,4 +178,3 @@
 | Stöckalp |  | 47736 | [OSM](https://www.openstreetmap.org/?mlat=46.802&mlon=8.2792&zoom=13) |
 | Tannensee |  | 31633 | [OSM](https://www.openstreetmap.org/?mlat=46.773892&mlon=8.306748&zoom=13) |
 | Trübsee |  | 47777 | [OSM](https://www.openstreetmap.org/?mlat=46.7934&mlon=8.398&zoom=13) |
-

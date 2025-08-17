@@ -3244,4 +3244,3 @@
 | ----- | ----- | ---- |
 | Geissler Tierpark |  | 148756 | [OSM](https://www.openstreetmap.org/?mlat=46.90228347255869&mlon=9.864701109330092&zoom=13) |
 | Tier- und Freizeitpark Chur |  | 148697 | [OSM](https://www.openstreetmap.org/?mlat=46.853067843537076&mlon=9.508769461316811&zoom=13) |
-

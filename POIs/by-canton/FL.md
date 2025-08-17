@@ -73,4 +73,3 @@
 | Name | Parent name | POI ID | Link |
 | ----- | ----- | ---- |
 | Vogelparadies Birka |  | 148692 | [OSM](https://www.openstreetmap.org/?mlat=47.21577974331752&mlon=9.5516188418694&zoom=13) |
-

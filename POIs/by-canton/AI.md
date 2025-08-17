@@ -74,4 +74,3 @@
 | ----- | ----- | ---- |
 | Ebenalp |  | 47792 | [OSM](https://www.openstreetmap.org/?mlat=47.2834&mlon=9.4115&zoom=13) |
 | Sämtisersee |  | 149441 | [OSM](https://www.openstreetmap.org/?mlat=47.271381&mlon=9.457951&zoom=13) |
-

@@ -1775,4 +1775,3 @@
 | Murmeltierpark Grimselpass |  | 148730 | [OSM](https://www.openstreetmap.org/?mlat=46.561578230752545&mlon=8.344706637606635&zoom=13) |
 | Tierpark Aletsch |  | 148718 | [OSM](https://www.openstreetmap.org/?mlat=46.40480828864631&mlon=8.137012738930139&zoom=13) |
 | Zoo des Marécottes |  | 148701 | [OSM](https://www.openstreetmap.org/?mlat=46.11021451927108&mlon=7.010926523707155&zoom=13) |
-

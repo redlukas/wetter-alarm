@@ -522,4 +522,3 @@
 | Name | Parent name | POI ID | Link |
 | ----- | ----- | ---- |
 | Papiliorama Kerzers |  | 148700 | [OSM](https://www.openstreetmap.org/?mlat=46.98970256705647&mlon=7.200402201173868&zoom=13) |
-

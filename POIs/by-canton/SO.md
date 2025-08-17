@@ -317,4 +317,3 @@
 | Stadtvoliere Vögeligarten Olten |  | 148723 | [OSM](https://www.openstreetmap.org/?mlat=47.34670534627874&mlon=7.914823391815389&zoom=13) |
 | Voliere | Solothurn | 148711 | [OSM](https://www.openstreetmap.org/?mlat=47.2083344589829&mlon=7.541315917066273&zoom=13) |
 | Wildpark Mühletäli |  | 148724 | [OSM](https://www.openstreetmap.org/?mlat=47.34181020124887&mlon=7.923134597693323&zoom=13) |
-

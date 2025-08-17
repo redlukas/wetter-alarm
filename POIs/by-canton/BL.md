@@ -200,4 +200,3 @@
 | Römischer Haustierpark Augst |  | 148726 | [OSM](https://www.openstreetmap.org/?mlat=47.53210241381642&mlon=7.732699756331318&zoom=13) |
 | Tierpark Reinach |  | 148705 | [OSM](https://www.openstreetmap.org/?mlat=47.492017215261384&mlon=7.600240058389283&zoom=13) |
 | Tierpark Weihermätteli |  | 148727 | [OSM](https://www.openstreetmap.org/?mlat=47.48679500302421&mlon=7.722373216031642&zoom=13) |
-
