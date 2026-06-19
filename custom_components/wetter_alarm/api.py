@@ -59,7 +59,7 @@ class WetterAlarmApiClient:
         try:
             res = await self._api_wrapper("get", alert_url)
 
-            meteo_alarms = res.get("meteo_alarms")
+            meteo_alarms = (res or {}).get("meteo_alarms") or []
 
             found_alarm = False
             for alarm in meteo_alarms:
