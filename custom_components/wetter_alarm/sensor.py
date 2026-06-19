@@ -14,8 +14,6 @@ from homeassistant.helpers.device_registry import DeviceEntryType, DeviceInfo
 
 from custom_components.wetter_alarm.const import (
     ALARM_ID,
-    CONFIG_DATA_LANGUAGE,
-    CONFIG_POIS,
     DOMAIN,
     HINT,
     PRIORITY,
@@ -52,18 +50,8 @@ async def async_setup_entry(
     async_add_entities: AddEntitiesCallback,
 ) -> None:
     """Set up the sensor platform."""
-    pois_from_config = config_entry.data[CONFIG_POIS]
-    data_language = config_entry.data[CONFIG_DATA_LANGUAGE]
     all_sensors = []
-    for poi_name, poi_id in pois_from_config:
-        coordinator = WetterAlarmCoordinator(
-            hass=hass,
-            logger=_LOGGER,
-            poi_name=poi_name,
-            poi_id=poi_id,
-            data_language=data_language,
-        )
-
+    for coordinator in config_entry.runtime_data.coordinators:
         sensors = [
             WetterAlarmIdSensor(
                 coordinator, SensorEntityDescription(key=ALARM_ID, name="Alarm ID")
@@ -92,8 +80,6 @@ async def async_setup_entry(
         ]
 
         all_sensors.extend(sensors)
-
-        await coordinator.async_config_entry_first_refresh()
 
     async_add_entities(all_sensors)
 

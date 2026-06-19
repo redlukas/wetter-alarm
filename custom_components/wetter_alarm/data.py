@@ -9,12 +9,15 @@ if TYPE_CHECKING:
     from homeassistant.config_entries import ConfigEntry
     from homeassistant.loader import Integration
 
+    from .coordinator import WetterAlarmCoordinator
+
 
 type WetterAlarmConfigEntry = ConfigEntry[WetterAlarmData]
 
 
 @dataclass
 class WetterAlarmData:
-    """Data for the Blueprint integration."""
+    """Data for the wetter_alarm integration."""
 
     integration: Integration
+    coordinators: list[WetterAlarmCoordinator]
